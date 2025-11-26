@@ -1,2 +1,2 @@
 # qb.Datas
-Compnents for datas management with scriptable objects
+Components for datas management with scriptable objects
