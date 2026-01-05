@@ -5,11 +5,12 @@ using UnityEngine.Events;
 using qb.Pattern;
 namespace qb.Datas
 {
+
     /// <summary>
-    /// Abstract shared data provider pattern.
-    /// Manage shared data access and scriptable object source serialization issue from addressable object.
+    /// Abstract base class for providers that manage access to shared data of a specified type.
+    /// Resolves scriptable object reference issue from addressable assets
     /// </summary>
-    /// <typeparam name="T">The type of data</typeparam>
+    /// <typeparam name="T">The type of data managed by the provider.</typeparam>
     public abstract class SDProvider<T>
     {
         [Flags] public enum DataAccess { None = 0, Read = 1, Write = 2, ReadWrite = 3 };
