@@ -2,6 +2,10 @@ using System.Text;
 using UnityEngine;
 namespace qb.Datas
 {
+    /// <summary>
+    /// Represents a serializable data asset containing a string array, with functionality to convert the array to a
+    /// single string using a specified separator.
+    /// </summary>
     [CreateAssetMenu(fileName = "StringArray_SerializedData", menuName = "qb/Datas/Serialized/StringArray_SerializedData")]
     public class StringArray_SerializedData : SerializedData<string[]>
     {

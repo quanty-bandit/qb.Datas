@@ -10,6 +10,11 @@ using UnityEditor;
 #endif
 namespace qb.Datas
 {
+    /// <summary>
+    /// Abstract base class for managing a shared data value with change notification, default value support, and safe
+    /// event subscription handling.
+    /// </summary>
+    /// <typeparam name="T">The type of the data value to be shared and observed.</typeparam>
     public abstract class SharedData<T> : SOWithGUID, ISharedData
     {
         [SerializeField]

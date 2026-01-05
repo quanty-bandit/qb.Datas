@@ -3,6 +3,10 @@ using UnityEngine;
 using UnityEngine.Events;
 namespace qb.Datas
 {
+    /// <summary>
+    /// Abstract base class for listening to shared data changes and invoking Unity events when the data updates.
+    /// </summary>
+    /// <typeparam name="T">The type of the shared data being observed.</typeparam>
     public abstract class SharedDataListener<T> : MonoBehaviour
     {
         [SerializeField,Required]
