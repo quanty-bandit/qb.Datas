@@ -23,8 +23,17 @@ Abstract Monobehaviour base class for listening to shared data changes and invok
 
 Abstract base class for listening to value changes from multiple shared data providers and invoking Unity events in response.
 
-**SDProvider<T>**
+
+**SDProvider_RW<T>**
 Abstract base class for providers that manage access to shared data of a specified type and resolves scriptable object reference issue from addressable assets.
+The binded shared data can be get and set with this provider.
+>**Remarks**
+>
+>**A shared data can be used as a serialized field in a Monobehavior attached to a non-addressable asset, otherwise you must use an SDProvider!**
+
+**SDProvider_R<T>**
+Abstract base class for providers that manage access to shared data of a specified type and resolves scriptable object reference issue from addressable assets.
+The binded shared data can only be get with this provider.
 >**Remarks**
 >
 >**A shared data can be used as a serialized field in a Monobehavior attached to a non-addressable asset, otherwise you must use an SDProvider!**
