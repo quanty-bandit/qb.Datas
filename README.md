@@ -2,7 +2,7 @@
 Components for datas management with scriptable objects
 
 ## CONTENT
-**SerializedData<T>**
+**SerializedData\<T>**
 
 Abstract implementation of serializable data container with a GUID, storing a **<U>read only</u>** value of the specified type
 
@@ -11,27 +11,27 @@ Abstract implementation of serializable data container with a GUID, storing a **
 Represents a serializable data asset containing a string array, with functionality to convert the array to a single string using a specified separator.
 
 ##
-**SharedData<T>**
+**SharedData\<T>**
 
 Abstract base class for managing a shared data value with change notification, default value support, and safe event subscription handling.
 
-**SharedDataListener<T>**
+**SharedDataListener\<T>**
 
 Abstract Monobehaviour base class for listening to shared data changes and invoking Unity events when the data updates.
 
-**SharedDatasListener<T>**
+**SharedDatasListener\<T>**
 
 Abstract base class for listening to value changes from multiple shared data providers and invoking Unity events in response.
 
 
-**SDProvider_RW<T>**
+**SDProvider_RW\<T>**
 Abstract base class for providers that manage access to shared data of a specified type and resolves scriptable object reference issue from addressable assets.
 The binded shared data can be get and set with this provider.
 >**Remarks**
 >
 >**A shared data can be used as a serialized field in a Monobehavior attached to a non-addressable asset, otherwise you must use an SDProvider!**
 
-**SDProvider_R<T>**
+**SDProvider_R\<T>**
 Abstract base class for providers that manage access to shared data of a specified type and resolves scriptable object reference issue from addressable assets.
 The binded shared data can only be get with this provider.
 >**Remarks**
