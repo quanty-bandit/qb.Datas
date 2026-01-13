@@ -1,5 +1,5 @@
 {
-  "name": "com.quanty-bandit.qb.datas",
+  "name": "com.quanty-bandit.datas",
   "version": "1.0.0",
   "displayName": "qb.Datas",
   "description": "Datas management with scriptable object",
